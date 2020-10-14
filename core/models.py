@@ -82,7 +82,6 @@ class Cliente(models.Model):
     correo = models.EmailField(null=True)
     telefono = models.CharField(max_length=30)
     direccion = models.TextField(null=True)
-
     servicios = models.ManyToManyField(Servicio, through='ServiciosCliente')
 
 
